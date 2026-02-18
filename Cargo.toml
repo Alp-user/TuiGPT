@@ -1,0 +1,13 @@
+[package]
+name = "ratatui-counter-app"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+crossterm = "0.29.0"
+ratatui = {version = "0.30.0", features = ["unstable-rendered-line-info"]}
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0.101"
